@@ -1,0 +1,9 @@
+@PropertyApi_HostAddress = http://localhost:5167
+
+GET {{PropertyApi_HostAddress}}/properties/
+Accept: application/json
+
+GET {{PropertyApi_HostAddress}}/property/{id}
+Accept: application/json
+
+###
