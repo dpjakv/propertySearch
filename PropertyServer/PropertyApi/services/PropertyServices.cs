@@ -20,8 +20,8 @@ namespace PropertyService
         public static async Task<string> GetJsonFromAzureBlob()
         {
             // Store these constants elsewhere. SAS token would be queries in real time. Shouldn't be stored.
-            const string blobUrl = "https://nmrkpidev.blob.core.windows.net/dev-test/dev-test.json";
-            const string sasToken = "?sp=r&st=2024-10-28T10:35:48Z&se=2025-10-28T18:35:48Z&spr=https&sv=2022-11-02&sr=b&sig=bdeoPWtefikVgUGFCUs4ihsl22ZhQGu4%2B4cAfoMwd4k%3D";
+            const string blobUrl = "YOUR_STORAGE_BLOB_URL";
+            const string sasToken = "YOUR_SAS_TOKEN";
 
             // Create a BlobClient
             BlobClient blobClient = new BlobClient(new Uri($"{blobUrl}?{sasToken}"));
